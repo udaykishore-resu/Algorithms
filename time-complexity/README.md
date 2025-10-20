@@ -23,3 +23,11 @@ The table below illustrates the characteristics of each class by showing the inp
 | Polynomial       | $O(n^2)$       | `list := []int{1, 5, 2, 8} (N=4)`               | // Bubble Sort (Nested Loops)<br>for i := 0; i < N; i++ {<br>for j := 0; j < N; j++ {<br>if list[i] > list[j] { swap }<br>}<br>fmt.Println(list) | [8 5 2 1]     |
 | Exponential      | $O(2^n)$       | `set := []string{"A", "B", "C"} (N=3)`          | // Generating Power Set (2^N subsets)<br>Subsets(set)<br>fmt.Println(all_subsets) | $2^3 = 8$ subsets |
 | Factorial        | $O(n!)$        | `set := []string{"A", "B", "C"} (N=3)`           | // Generating all Permutations (N!)<br>Permutations(set)<br>fmt.Println(all_perms) | $3! = 6$ permutations |
+
+### Constant Time: $O(1)$
+An operation that takes the same amount of time regardless of the size of the input $N$.
+
+|Input (N = number of elements)|Computer follows algorithm|Output|
+|---|---|---|
+|List: `[8, 5, 2, 9, 1]` (N=5)|`output the element at the 0 index of the list`|`8`|
+**Explanation:** The algorithm only needs to perform a single step: accessing the first element of the list. This step takes the same amount of time whether the list has 5 elements or 5 million elements, making it constant time $O(1)$.
