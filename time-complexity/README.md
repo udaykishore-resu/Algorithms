@@ -31,3 +31,11 @@ An operation that takes the same amount of time regardless of the size of the in
 |---|---|---|
 |List: `[8, 5, 2, 9, 1]` (N=5)|`output the element at the 0 index of the list`|`8`|
 **Explanation:** The algorithm only needs to perform a single step: accessing the first element of the list. This step takes the same amount of time whether the list has 5 elements or 5 million elements, making it constant time $O(1)$.
+
+### Logarithmic: $O(\log n)$
+An operation that involves repeatedly halving the search space until the target is found, such as in a Binary Search, results in $O(\log N)$ complexity.
+
+| Input (N = number of elements)                        | Computer follows algorithm                                                                                                      | Output |
+|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------|
+| Sorted List:<br>`[2, 4, 6, 8, 10, 12, 14, 16]`<br>(N=8)<br>Target: `12` |  `let min = 0,<br>max = N-1<br>while min <= max:<br> mid = (min + max) / 2<br> if List[mid] == Target: output mid (index)<br> else if List[mid] < Target: min = mid + 1<br> else: max = mid - 1 ` | 5      |
+
